@@ -23,8 +23,9 @@ To get started follow these steps to add a new decoder:
   and `.disabled = 3` to `.disabled = 0`
 - Edit `include/rtl_433_devices.h`  
   E.g. add `DECL(my_device) \`
-- Add your files with Git (no need to commit yet)  
-  E.g. `git add src/devices/my_device.c include/rtl_433_devices.h`
+- Add your files with Git
+  E.g. `git add src/devices/my_device.c`
+- Commit your changes (required by the next step): `git commit -am "my_device)`
 - Run `./maintainer_update.py` to add the CMake compile rules
 - Compile, add files with Git again  
   E.g. `git add src/CMakeLists.txt`
